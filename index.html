@@ -63,8 +63,12 @@ nav li a:hover,nav li a:focus-visible{color:var(--blauw)}
 .eisen li::before{content:"";position:absolute;left:0;top:19px;width:12px;height:3px;background:var(--blauw)}
 
 /* hero */
-.hero{padding:56px 0 72px;text-align:center}
-.hero img{width:min(720px,100%);height:auto;display:block;margin:0 auto}
+.hero{padding:0 0 72px;text-align:center}
+.hero .wrap{max-width:none;padding:0}
+.hero .banner{width:100%;height:auto;display:block}
+.hero .logo-mobiel{display:none;width:min(720px,100%);height:auto;margin:40px auto 0}
+.hero p,.hero .acties{padding-left:24px;padding-right:24px}
+.hero p.start{max-width:640px;margin-left:auto;margin-right:auto}
 .hero p{max-width:640px;margin:36px auto 0;font-size:19px;color:var(--zilver)}
 .hero p.start{margin-top:22px;font-size:16px;color:var(--zilver-dim);border:1px solid #2a313b;border-left:3px solid var(--blauw);padding:14px 18px;text-align:left;border-radius:4px}
 .hero p.start strong{color:var(--wit)}
@@ -115,6 +119,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 @media (max-width:860px){
   nav ul{display:none}
+  .hero .banner{display:none}
+  .hero .logo-mobiel{display:block}
   .ref-grid{grid-template-columns:repeat(3,1fr)}
   .dienst-grid{grid-template-columns:1fr 1fr}
   .dienst:nth-child(3){border-left:none}
@@ -152,7 +158,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 <header class="hero" id="top">
   <div class="wrap">
-    <img src="/logo.png" alt="Oibase Beveiliging – Veiligheid met karakter">
+    <img class="banner" src="/banner.jpg" alt="Oibase Beveiliging – Veiligheid met karakter. Objectbeveiliging, evenementen, zorgbeveiliging, horeca & facilitair. Coming in 2027">
+    <img class="logo-mobiel" src="/logo.png" alt="Oibase Beveiliging – Veiligheid met karakter">
     <p>Beveiliging die past bij uw locatie, uw mensen en uw publiek. Gecertificeerde beveiligers met 24 jaar ervaring in de sector, gevestigd in Groningen en werkzaam in heel Noord-Nederland.</p>
     <p class="start">Wij starten onze dienstverlening in <strong>maart 2027</strong>, zodra onze ND-vergunning van Justis is verleend. Tot die tijd gaan wij graag al met u in gesprek over uw beveiligingsvraag.</p>
     <div class="acties">
