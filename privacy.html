@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacyverklaring – Oibase Beveiliging</title>
+<link rel="canonical" href="https://www.oibase-beveiliging.nl/privacy">
+<link rel="icon" type="image/jpeg" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --zwart:#000;
+  --antraciet:#0f1216;
+  --blauw:#0a8cff;
+  --blauw-diep:#0044d4;
+  --zilver:#d9dde2;
+  --zilver-dim:#9aa2ad;
+  --wit:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--zwart);color:var(--zilver);font-family:'Montserrat',Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Michroma','Eurostile','Arial Black',sans-serif;color:var(--wit);font-weight:400;line-height:1.2}
+a{color:var(--blauw);text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* spoedbalk */
+.spoed{background:var(--blauw);color:#fff;text-align:center;font-size:14px;font-weight:600;letter-spacing:.04em;padding:9px 16px}
+.spoed a{color:#fff;text-decoration:underline;text-underline-offset:3px;margin-left:6px}
+.spoed a:hover{color:#dff0ff}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);border-bottom:1px solid #1c2128}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Michroma',sans-serif;font-size:15px;letter-spacing:.14em;color:var(--wit)}
+.brand span{color:var(--blauw)}
+nav ul{display:flex;gap:28px;list-style:none}
+nav li a{color:var(--zilver);font-size:14px;font-weight:600;letter-spacing:.06em}
+nav li a:hover,nav li a:focus-visible{color:var(--blauw)}
+.tel{background:var(--blauw);color:#fff!important;padding:9px 18px;border-radius:4px}
+.tel:hover{background:var(--blauw-diep)}
+.login{border:1px solid #2a313b;padding:8px 16px;border-radius:4px;color:var(--wit)!important}
+.login:hover{border-color:var(--blauw)}
+
+/* referenties */
+.refs{padding:56px 0;border-bottom:1px solid #1c2128}
+.refs p{text-align:center;color:var(--zilver-dim);font-size:15px;margin-bottom:28px}
+.ref-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;align-items:center}
+.ref{height:64px;display:flex;align-items:center;justify-content:center;border:1px dashed #2a313b;border-radius:4px;color:#5b6570;font-size:12px;letter-spacing:.06em}
+.ref img{max-height:44px;max-width:100%;filter:grayscale(1) brightness(1.6);opacity:.8}
+
+/* werken bij */
+.werken{border-top:1px solid #1c2128}
+.eisen{list-style:none;margin-top:20px}
+.eisen li{padding:10px 0 10px 26px;position:relative;color:var(--zilver);font-size:15px}
+.eisen li::before{content:"";position:absolute;left:0;top:19px;width:12px;height:3px;background:var(--blauw)}
+
+/* hero */
+.hero{padding:56px 0 72px;text-align:center}
+.hero img{width:min(720px,100%);height:auto;display:block;margin:0 auto}
+.hero p{max-width:640px;margin:36px auto 0;font-size:19px;color:var(--zilver)}
+.hero p.start{margin-top:22px;font-size:16px;color:var(--zilver-dim);border:1px solid #2a313b;border-left:3px solid var(--blauw);padding:14px 18px;text-align:left;border-radius:4px}
+.hero p.start strong{color:var(--wit)}
+.acties{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.knop{display:inline-block;padding:14px 30px;border-radius:4px;font-weight:700;font-size:15px;letter-spacing:.04em}
+.knop.vol{background:var(--blauw);color:#fff}
+.knop.vol:hover{background:var(--blauw-diep)}
+.knop.lijn{border:2px solid var(--blauw);color:var(--blauw)}
+.knop.lijn:hover{background:rgba(10,140,255,.12)}
+
+/* diensten – zoals de balk onder het logo: blauwe verticale scheidingen */
+.diensten{border-top:1px solid #1c2128;border-bottom:1px solid #1c2128;background:var(--antraciet)}
+.dienst-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.dienst{padding:48px 28px;border-left:3px solid var(--blauw)}
+.dienst:first-child{border-left:none}
+.dienst h3{font-size:15px;letter-spacing:.08em;margin-bottom:14px}
+.dienst p{font-size:15px;color:var(--zilver-dim)}
+
+/* secties */
+section.blok{padding:88px 0}
+.kop{font-size:clamp(22px,3vw,30px);letter-spacing:.06em;margin-bottom:22px}
+.kop::after{content:"";display:block;width:64px;height:3px;background:var(--blauw);margin-top:18px}
+.twee{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.cijfers{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:8px}
+.cijfer strong{display:block;font-family:'Michroma',sans-serif;font-size:38px;color:var(--blauw);line-height:1}
+.cijfer span{display:block;margin-top:10px;color:var(--zilver-dim);font-size:15px}
+
+.punten{list-style:none;margin-top:8px}
+.punten li{padding:18px 0 18px 30px;border-bottom:1px solid #1c2128;position:relative}
+.punten li::before{content:"";position:absolute;left:0;top:27px;width:14px;height:3px;background:var(--blauw)}
+.punten li strong{color:var(--wit);display:block;margin-bottom:4px}
+.punten li span{color:var(--zilver-dim);font-size:15px}
+
+/* mail */
+.mailblok{border:1px solid #2a313b;border-top:3px solid var(--blauw);padding:36px 32px;border-radius:4px;background:#000}
+.mailblok h3{font-size:16px;letter-spacing:.08em;margin-bottom:14px}
+.mailblok p.klein{font-size:14px;color:var(--zilver-dim);margin-top:18px}
+.mailgroot{display:inline-block;font-family:'Michroma',sans-serif;font-size:clamp(15px,2.2vw,22px);color:var(--blauw);margin:18px 0 0;word-break:break-all;border-bottom:2px solid transparent}
+.mailgroot:hover{border-bottom-color:var(--blauw)}
+.gegevens p{color:var(--zilver-dim);font-size:14px}
+
+/* contact */
+.contact{background:var(--antraciet);border-top:1px solid #1c2128}
+.contact .twee{gap:48px}
+
+footer{padding:36px 0;border-top:1px solid #1c2128;font-size:14px;color:var(--zilver-dim)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media (max-width:860px){
+  nav ul{display:none}
+  .ref-grid{grid-template-columns:repeat(3,1fr)}
+  .dienst-grid{grid-template-columns:1fr 1fr}
+  .dienst:nth-child(3){border-left:none}
+  .twee{grid-template-columns:1fr;gap:40px}
+  section.blok{padding:64px 0}
+}
+@media (max-width:520px){
+  .dienst-grid{grid-template-columns:1fr}
+  .dienst{border-left:none;border-top:1px solid #1c2128;padding:32px 24px}
+  .cijfers{grid-template-columns:1fr 1fr}
+  .ref-grid{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.onderdeel{text-align:center;color:var(--zilver-dim);font-size:14px;padding:0 24px 56px;margin-top:-24px}
+</style>
+<style>.tekst{max-width:760px;margin:0 auto;padding:72px 24px 96px}.tekst h1{font-size:clamp(22px,3vw,30px);letter-spacing:.06em;margin-bottom:28px}.tekst h1::after{content:"";display:block;width:64px;height:3px;background:var(--blauw);margin-top:18px}.tekst h2{font-size:16px;letter-spacing:.06em;margin:40px 0 12px}.tekst p,.tekst li{color:var(--zilver);margin-bottom:12px}.tekst ul{padding-left:22px}.tekst .datum{color:var(--zilver-dim);font-size:14px}</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/"><span>OI</span>BASE BEVEILIGING</a>
+    <ul>
+      <li><a href="/#diensten">Diensten</a></li>
+      <li><a href="/#over">Over ons</a></li>
+      <li><a href="/#werken">Werken bij</a></li>
+      <li><a href="mailto:info@oibase-beveiliging.nl" class="tel">Mail ons</a></li>
+    </ul>
+  </div>
+</nav>
+<main class="tekst">
+<h1>Privacyverklaring</h1>
+<p class="datum">Laatst bijgewerkt: 5 oktober 2026</p>
+<p>Oibase B.V., waarvan Oibase Beveiliging onderdeel is, gevestigd aan de Goordelaan 19, 9591 CB Onstwedde (KvK 42117378), is verantwoordelijk voor de verwerking van persoonsgegevens zoals beschreven in deze verklaring.</p>
+<h2>Welke gegevens wij verwerken</h2>
+<p>Deze website bevat geen formulieren en plaatst geen tracking- of marketingcookies. Wij verwerken alleen de gegevens die u zelf aan ons verstrekt wanneer u ons een e-mail stuurt: uw naam, e-mailadres, eventueel uw bedrijfsnaam en telefoonnummer, en de inhoud van uw bericht. Bij een sollicitatie verwerken wij daarnaast uw cv, motivatie, Wpbr-pasnummer, regio en beschikbaarheid.</p>
+<h2>Waarvoor wij uw gegevens gebruiken</h2>
+<ul>
+<li>Het beantwoorden van uw vraag of verzoek om een kennismaking of offerte.</li>
+<li>Het beoordelen van uw sollicitatie en het onderhouden van contact daarover.</li>
+<li>Het voldoen aan wettelijke verplichtingen, waaronder die uit de Wet particuliere beveiligingsorganisaties en recherchebureaus (Wpbr).</li>
+</ul>
+<p>De grondslag hiervoor is de uitvoering van een (pre)contractuele relatie of ons gerechtvaardigd belang om op uw bericht te reageren.</p>
+<h2>Bewaartermijnen</h2>
+<p>Zakelijke correspondentie bewaren wij zolang dat nodig is voor het doel waarvoor u contact opnam, en daarna conform de fiscale bewaarplicht van zeven jaar wanneer er een overeenkomst uit voortkomt. Sollicitatiegegevens verwijderen wij uiterlijk vier weken na afronding van de procedure, tenzij u toestemming geeft om ze maximaal één jaar te bewaren.</p>
+<h2>Delen met derden</h2>
+<p>Wij verkopen uw gegevens niet. Wij delen ze alleen met partijen die noodzakelijk zijn voor onze dienstverlening (zoals onze e-mailprovider en hostingpartij) of wanneer de wet dit vereist. Deze website wordt gehost door Vercel Inc.; Vercel kan technische servergegevens zoals IP-adres verwerken om de site te leveren en te beveiligen.</p>
+<h2>Uw rechten</h2>
+<p>U heeft het recht op inzage, rectificatie, verwijdering en beperking van de verwerking, en het recht om bezwaar te maken of uw gegevens over te dragen. Stuur uw verzoek naar <a href="mailto:info@oibase-beveiliging.nl">info@oibase-beveiliging.nl</a>. Wij reageren binnen vier weken. U kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens.</p>
+<h2>Beveiliging</h2>
+<p>Wij nemen passende technische en organisatorische maatregelen om uw gegevens te beschermen tegen verlies of onrechtmatige verwerking. Deze website is uitsluitend via een beveiligde verbinding (HTTPS) bereikbaar.</p>
+<h2>Wijzigingen</h2>
+<p>Wij kunnen deze verklaring aanpassen. De actuele versie staat altijd op deze pagina.</p>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Oibase Beveiliging, onderdeel van Oibase B.V.</span>
+    <span><a href="mailto:info@oibase-beveiliging.nl">info@oibase-beveiliging.nl</a> · <a href="/privacy">Privacy</a> · <a href="/voorwaarden">Voorwaarden</a></span>
+  </div>
+</footer>
+</body>
+</html>

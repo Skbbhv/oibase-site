@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Algemene voorwaarden – Oibase Beveiliging</title>
+<link rel="canonical" href="https://www.oibase-beveiliging.nl/voorwaarden">
+<link rel="icon" type="image/jpeg" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --zwart:#000;
+  --antraciet:#0f1216;
+  --blauw:#0a8cff;
+  --blauw-diep:#0044d4;
+  --zilver:#d9dde2;
+  --zilver-dim:#9aa2ad;
+  --wit:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--zwart);color:var(--zilver);font-family:'Montserrat',Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Michroma','Eurostile','Arial Black',sans-serif;color:var(--wit);font-weight:400;line-height:1.2}
+a{color:var(--blauw);text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* spoedbalk */
+.spoed{background:var(--blauw);color:#fff;text-align:center;font-size:14px;font-weight:600;letter-spacing:.04em;padding:9px 16px}
+.spoed a{color:#fff;text-decoration:underline;text-underline-offset:3px;margin-left:6px}
+.spoed a:hover{color:#dff0ff}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);border-bottom:1px solid #1c2128}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Michroma',sans-serif;font-size:15px;letter-spacing:.14em;color:var(--wit)}
+.brand span{color:var(--blauw)}
+nav ul{display:flex;gap:28px;list-style:none}
+nav li a{color:var(--zilver);font-size:14px;font-weight:600;letter-spacing:.06em}
+nav li a:hover,nav li a:focus-visible{color:var(--blauw)}
+.tel{background:var(--blauw);color:#fff!important;padding:9px 18px;border-radius:4px}
+.tel:hover{background:var(--blauw-diep)}
+.login{border:1px solid #2a313b;padding:8px 16px;border-radius:4px;color:var(--wit)!important}
+.login:hover{border-color:var(--blauw)}
+
+/* referenties */
+.refs{padding:56px 0;border-bottom:1px solid #1c2128}
+.refs p{text-align:center;color:var(--zilver-dim);font-size:15px;margin-bottom:28px}
+.ref-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;align-items:center}
+.ref{height:64px;display:flex;align-items:center;justify-content:center;border:1px dashed #2a313b;border-radius:4px;color:#5b6570;font-size:12px;letter-spacing:.06em}
+.ref img{max-height:44px;max-width:100%;filter:grayscale(1) brightness(1.6);opacity:.8}
+
+/* werken bij */
+.werken{border-top:1px solid #1c2128}
+.eisen{list-style:none;margin-top:20px}
+.eisen li{padding:10px 0 10px 26px;position:relative;color:var(--zilver);font-size:15px}
+.eisen li::before{content:"";position:absolute;left:0;top:19px;width:12px;height:3px;background:var(--blauw)}
+
+/* hero */
+.hero{padding:56px 0 72px;text-align:center}
+.hero img{width:min(720px,100%);height:auto;display:block;margin:0 auto}
+.hero p{max-width:640px;margin:36px auto 0;font-size:19px;color:var(--zilver)}
+.hero p.start{margin-top:22px;font-size:16px;color:var(--zilver-dim);border:1px solid #2a313b;border-left:3px solid var(--blauw);padding:14px 18px;text-align:left;border-radius:4px}
+.hero p.start strong{color:var(--wit)}
+.acties{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.knop{display:inline-block;padding:14px 30px;border-radius:4px;font-weight:700;font-size:15px;letter-spacing:.04em}
+.knop.vol{background:var(--blauw);color:#fff}
+.knop.vol:hover{background:var(--blauw-diep)}
+.knop.lijn{border:2px solid var(--blauw);color:var(--blauw)}
+.knop.lijn:hover{background:rgba(10,140,255,.12)}
+
+/* diensten – zoals de balk onder het logo: blauwe verticale scheidingen */
+.diensten{border-top:1px solid #1c2128;border-bottom:1px solid #1c2128;background:var(--antraciet)}
+.dienst-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.dienst{padding:48px 28px;border-left:3px solid var(--blauw)}
+.dienst:first-child{border-left:none}
+.dienst h3{font-size:15px;letter-spacing:.08em;margin-bottom:14px}
+.dienst p{font-size:15px;color:var(--zilver-dim)}
+
+/* secties */
+section.blok{padding:88px 0}
+.kop{font-size:clamp(22px,3vw,30px);letter-spacing:.06em;margin-bottom:22px}
+.kop::after{content:"";display:block;width:64px;height:3px;background:var(--blauw);margin-top:18px}
+.twee{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.cijfers{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:8px}
+.cijfer strong{display:block;font-family:'Michroma',sans-serif;font-size:38px;color:var(--blauw);line-height:1}
+.cijfer span{display:block;margin-top:10px;color:var(--zilver-dim);font-size:15px}
+
+.punten{list-style:none;margin-top:8px}
+.punten li{padding:18px 0 18px 30px;border-bottom:1px solid #1c2128;position:relative}
+.punten li::before{content:"";position:absolute;left:0;top:27px;width:14px;height:3px;background:var(--blauw)}
+.punten li strong{color:var(--wit);display:block;margin-bottom:4px}
+.punten li span{color:var(--zilver-dim);font-size:15px}
+
+/* mail */
+.mailblok{border:1px solid #2a313b;border-top:3px solid var(--blauw);padding:36px 32px;border-radius:4px;background:#000}
+.mailblok h3{font-size:16px;letter-spacing:.08em;margin-bottom:14px}
+.mailblok p.klein{font-size:14px;color:var(--zilver-dim);margin-top:18px}
+.mailgroot{display:inline-block;font-family:'Michroma',sans-serif;font-size:clamp(15px,2.2vw,22px);color:var(--blauw);margin:18px 0 0;word-break:break-all;border-bottom:2px solid transparent}
+.mailgroot:hover{border-bottom-color:var(--blauw)}
+.gegevens p{color:var(--zilver-dim);font-size:14px}
+
+/* contact */
+.contact{background:var(--antraciet);border-top:1px solid #1c2128}
+.contact .twee{gap:48px}
+
+footer{padding:36px 0;border-top:1px solid #1c2128;font-size:14px;color:var(--zilver-dim)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media (max-width:860px){
+  nav ul{display:none}
+  .ref-grid{grid-template-columns:repeat(3,1fr)}
+  .dienst-grid{grid-template-columns:1fr 1fr}
+  .dienst:nth-child(3){border-left:none}
+  .twee{grid-template-columns:1fr;gap:40px}
+  section.blok{padding:64px 0}
+}
+@media (max-width:520px){
+  .dienst-grid{grid-template-columns:1fr}
+  .dienst{border-left:none;border-top:1px solid #1c2128;padding:32px 24px}
+  .cijfers{grid-template-columns:1fr 1fr}
+  .ref-grid{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.onderdeel{text-align:center;color:var(--zilver-dim);font-size:14px;padding:0 24px 56px;margin-top:-24px}
+</style>
+<style>.tekst{max-width:760px;margin:0 auto;padding:72px 24px 96px}.tekst h1{font-size:clamp(22px,3vw,30px);letter-spacing:.06em;margin-bottom:28px}.tekst h1::after{content:"";display:block;width:64px;height:3px;background:var(--blauw);margin-top:18px}.tekst h2{font-size:16px;letter-spacing:.06em;margin:40px 0 12px}.tekst p,.tekst li{color:var(--zilver);margin-bottom:12px}.tekst ul{padding-left:22px}.tekst .datum{color:var(--zilver-dim);font-size:14px}</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/"><span>OI</span>BASE BEVEILIGING</a>
+    <ul>
+      <li><a href="/#diensten">Diensten</a></li>
+      <li><a href="/#over">Over ons</a></li>
+      <li><a href="/#werken">Werken bij</a></li>
+      <li><a href="mailto:info@oibase-beveiliging.nl" class="tel">Mail ons</a></li>
+    </ul>
+  </div>
+</nav>
+<main class="tekst">
+<h1>Algemene voorwaarden</h1>
+<p class="datum">Versie oktober 2026 · Van toepassing op dienstverlening vanaf maart 2027</p>
+<h2>Artikel 1 – Definities</h2>
+<p>Opdrachtnemer: Oibase B.V., handelend onder de naam Oibase Beveiliging, gevestigd te Onstwedde, KvK 42117378. Opdrachtgever: iedere natuurlijke of rechtspersoon die met opdrachtnemer een overeenkomst sluit. Diensten: alle beveiligings-, host- en facilitaire werkzaamheden die opdrachtnemer in opdracht verricht.</p>
+<h2>Artikel 2 – Toepasselijkheid</h2>
+<p>Deze voorwaarden zijn van toepassing op alle offertes, overeenkomsten en diensten van opdrachtnemer. Afwijkingen gelden alleen als deze schriftelijk zijn overeengekomen. Inkoop- of andere voorwaarden van opdrachtgever worden uitdrukkelijk van de hand gewezen.</p>
+<h2>Artikel 3 – Offertes en totstandkoming</h2>
+<p>Offertes zijn vrijblijvend en dertig dagen geldig, tenzij anders vermeld. Een overeenkomst komt tot stand na schriftelijke bevestiging door opdrachtnemer of zodra opdrachtnemer met de uitvoering begint.</p>
+<h2>Artikel 4 – Vergunning en uitvoering</h2>
+<p>Opdrachtnemer verricht beveiligingswerkzaamheden uitsluitend met een geldige vergunning op grond van de Wpbr en met beveiligers die beschikken over een geldig legitimatiebewijs van Justis. Opdrachtnemer bepaalt de wijze van uitvoering en de inzet van personeel, met inachtneming van de redelijke wensen van opdrachtgever. Opdrachtnemer mag derden inschakelen.</p>
+<h2>Artikel 5 – Verplichtingen opdrachtgever</h2>
+<p>Opdrachtgever verstrekt tijdig alle informatie die nodig is voor een goede en veilige uitvoering, zorgt voor een veilige werkplek, de benodigde voorzieningen en toegang tot de locatie, en meldt bijzondere risico's vooraf.</p>
+<h2>Artikel 6 – Tarieven en betaling</h2>
+<p>Tarieven zijn in euro's, exclusief btw, en gebaseerd op de overeengekomen uren en diensttijden. Voor avond-, nacht-, weekend- en feestdagdiensten gelden toeslagen zoals vermeld in de offerte. Diensten worden per vier weken of per maand gefactureerd met een betalingstermijn van veertien dagen. Bij overschrijding is opdrachtgever de wettelijke handelsrente en buitengerechtelijke incassokosten verschuldigd. Opdrachtnemer mag tarieven jaarlijks per 1 januari aanpassen aan de cao-ontwikkeling en inflatie.</p>
+<h2>Artikel 7 – Annulering en wijziging</h2>
+<p>Annulering of vermindering van ingeplande diensten is kosteloos tot 48 uur voor aanvang van de dienst. Daarna wordt de volledige dienst in rekening gebracht. Voor evenementen geldt een annuleringstermijn van zeven dagen, tenzij anders overeengekomen.</p>
+<h2>Artikel 8 – Duur en opzegging</h2>
+<p>Overeenkomsten voor onbepaalde tijd kunnen door beide partijen schriftelijk worden opgezegd met een opzegtermijn van één kalendermaand. Overeenkomsten voor bepaalde tijd eindigen van rechtswege na afloop van de looptijd.</p>
+<h2>Artikel 9 – Aansprakelijkheid</h2>
+<p>Opdrachtnemer heeft een inspanningsverplichting en garandeert niet dat schade, diefstal of incidenten volledig worden voorkomen. Aansprakelijkheid is beperkt tot directe schade en tot het bedrag dat de aansprakelijkheidsverzekering van opdrachtnemer in het betreffende geval uitkeert, of bij uitblijven daarvan tot het factuurbedrag van de betreffende maand. Opdrachtnemer is niet aansprakelijk voor indirecte of gevolgschade. Schade moet binnen zeven dagen na ontdekking schriftelijk worden gemeld.</p>
+<h2>Artikel 10 – Overmacht</h2>
+<p>Bij overmacht, waaronder ziekte van personeel die niet redelijkerwijs kan worden opgevangen, extreme weersomstandigheden, overheidsmaatregelen of stakingen, is opdrachtnemer niet gehouden tot nakoming en niet schadeplichtig.</p>
+<h2>Artikel 11 – Personeel</h2>
+<p>Het is opdrachtgever niet toegestaan om tijdens de overeenkomst en tot twaalf maanden daarna medewerkers van opdrachtnemer in dienst te nemen of anderszins voor zich te laten werken zonder schriftelijke toestemming, op straffe van een vergoeding van € 10.000 per medewerker.</p>
+<h2>Artikel 12 – Geheimhouding en privacy</h2>
+<p>Beide partijen behandelen vertrouwelijke informatie als zodanig. Opdrachtnemer verwerkt persoonsgegevens conform de AVG en de privacyverklaring op deze website.</p>
+<h2>Artikel 13 – Toepasselijk recht</h2>
+<p>Op alle overeenkomsten is Nederlands recht van toepassing. Geschillen worden voorgelegd aan de bevoegde rechter van de rechtbank Noord-Nederland.</p>
+<p style="margin-top:36px;color:var(--zilver-dim);font-size:14px">Dit is een algemene basisversie. Laat deze voorwaarden vóór het sluiten van uw eerste overeenkomst toetsen door een jurist of de Nederlandse Veiligheidsbranche.</p>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Oibase Beveiliging, onderdeel van Oibase B.V.</span>
+    <span><a href="mailto:info@oibase-beveiliging.nl">info@oibase-beveiliging.nl</a> · <a href="/privacy">Privacy</a> · <a href="/voorwaarden">Voorwaarden</a></span>
+  </div>
+</footer>
+</body>
+</html>
