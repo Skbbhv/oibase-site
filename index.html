@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oibase Beveiliging – Veiligheid met karakter</title>
+<link rel="canonical" href="https://www.oibase-beveiliging.nl/">
+<link rel="icon" type="image/jpeg" href="/logo.png">
+<meta property="og:title" content="Oibase Beveiliging – Veiligheid met karakter">
+<meta property="og:description" content="Objectbeveiliging, evenementen, zorgbeveiliging en horeca & facilitair in Noord-Nederland. Operationeel vanaf maart 2027.">
+<meta property="og:image" content="https://www.oibase-beveiliging.nl/logo.png">
+<meta property="og:url" content="https://www.oibase-beveiliging.nl/">
+<meta property="og:type" content="website">
+<meta name="description" content="Oibase Beveiliging: objectbeveiliging, evenementenbeveiliging, zorgbeveiliging en horeca & facilitaire beveiliging. 24 jaar ervaring, gevestigd in Onstwedde, Groningen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --zwart:#000;
+  --antraciet:#0f1216;
+  --blauw:#0a8cff;
+  --blauw-diep:#0044d4;
+  --zilver:#d9dde2;
+  --zilver-dim:#9aa2ad;
+  --wit:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--zwart);color:var(--zilver);font-family:'Montserrat',Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Michroma','Eurostile','Arial Black',sans-serif;color:var(--wit);font-weight:400;line-height:1.2}
+a{color:var(--blauw);text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* spoedbalk */
+.spoed{background:var(--blauw);color:#fff;text-align:center;font-size:14px;font-weight:600;letter-spacing:.04em;padding:9px 16px}
+.spoed a{color:#fff;text-decoration:underline;text-underline-offset:3px;margin-left:6px}
+.spoed a:hover{color:#dff0ff}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);border-bottom:1px solid #1c2128}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Michroma',sans-serif;font-size:15px;letter-spacing:.14em;color:var(--wit)}
+.brand span{color:var(--blauw)}
+nav ul{display:flex;gap:28px;list-style:none}
+nav li a{color:var(--zilver);font-size:14px;font-weight:600;letter-spacing:.06em}
+nav li a:hover,nav li a:focus-visible{color:var(--blauw)}
+.tel{background:var(--blauw);color:#fff!important;padding:9px 18px;border-radius:4px}
+.tel:hover{background:var(--blauw-diep)}
+.login{border:1px solid #2a313b;padding:8px 16px;border-radius:4px;color:var(--wit)!important}
+.login:hover{border-color:var(--blauw)}
+
+/* referenties */
+.refs{padding:56px 0;border-bottom:1px solid #1c2128}
+.refs p{text-align:center;color:var(--zilver-dim);font-size:15px;margin-bottom:28px}
+.ref-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;align-items:center}
+.ref{height:64px;display:flex;align-items:center;justify-content:center;border:1px dashed #2a313b;border-radius:4px;color:#5b6570;font-size:12px;letter-spacing:.06em}
+.ref img{max-height:44px;max-width:100%;filter:grayscale(1) brightness(1.6);opacity:.8}
+
+/* werken bij */
+.werken{border-top:1px solid #1c2128}
+.eisen{list-style:none;margin-top:20px}
+.eisen li{padding:10px 0 10px 26px;position:relative;color:var(--zilver);font-size:15px}
+.eisen li::before{content:"";position:absolute;left:0;top:19px;width:12px;height:3px;background:var(--blauw)}
+
+/* hero */
+.hero{padding:56px 0 72px;text-align:center}
+.hero img{width:min(720px,100%);height:auto;display:block;margin:0 auto}
+.hero p{max-width:640px;margin:36px auto 0;font-size:19px;color:var(--zilver)}
+.hero p.start{margin-top:22px;font-size:16px;color:var(--zilver-dim);border:1px solid #2a313b;border-left:3px solid var(--blauw);padding:14px 18px;text-align:left;border-radius:4px}
+.hero p.start strong{color:var(--wit)}
+.acties{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.knop{display:inline-block;padding:14px 30px;border-radius:4px;font-weight:700;font-size:15px;letter-spacing:.04em}
+.knop.vol{background:var(--blauw);color:#fff}
+.knop.vol:hover{background:var(--blauw-diep)}
+.knop.lijn{border:2px solid var(--blauw);color:var(--blauw)}
+.knop.lijn:hover{background:rgba(10,140,255,.12)}
+
+/* diensten – zoals de balk onder het logo: blauwe verticale scheidingen */
+.diensten{border-top:1px solid #1c2128;border-bottom:1px solid #1c2128;background:var(--antraciet)}
+.dienst-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.dienst{padding:48px 28px;border-left:3px solid var(--blauw)}
+.dienst:first-child{border-left:none}
+.dienst h3{font-size:15px;letter-spacing:.08em;margin-bottom:14px}
+.dienst p{font-size:15px;color:var(--zilver-dim)}
+
+/* secties */
+section.blok{padding:88px 0}
+.kop{font-size:clamp(22px,3vw,30px);letter-spacing:.06em;margin-bottom:22px}
+.kop::after{content:"";display:block;width:64px;height:3px;background:var(--blauw);margin-top:18px}
+.twee{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.cijfers{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:8px}
+.cijfer strong{display:block;font-family:'Michroma',sans-serif;font-size:38px;color:var(--blauw);line-height:1}
+.cijfer span{display:block;margin-top:10px;color:var(--zilver-dim);font-size:15px}
+
+.punten{list-style:none;margin-top:8px}
+.punten li{padding:18px 0 18px 30px;border-bottom:1px solid #1c2128;position:relative}
+.punten li::before{content:"";position:absolute;left:0;top:27px;width:14px;height:3px;background:var(--blauw)}
+.punten li strong{color:var(--wit);display:block;margin-bottom:4px}
+.punten li span{color:var(--zilver-dim);font-size:15px}
+
+/* mail */
+.mailblok{border:1px solid #2a313b;border-top:3px solid var(--blauw);padding:36px 32px;border-radius:4px;background:#000}
+.mailblok h3{font-size:16px;letter-spacing:.08em;margin-bottom:14px}
+.mailblok p.klein{font-size:14px;color:var(--zilver-dim);margin-top:18px}
+.mailgroot{display:inline-block;font-family:'Michroma',sans-serif;font-size:clamp(15px,2.2vw,22px);color:var(--blauw);margin:18px 0 0;word-break:break-all;border-bottom:2px solid transparent}
+.mailgroot:hover{border-bottom-color:var(--blauw)}
+.gegevens p{color:var(--zilver-dim);font-size:14px}
+
+/* contact */
+.contact{background:var(--antraciet);border-top:1px solid #1c2128}
+.contact .twee{gap:48px}
+
+footer{padding:36px 0;border-top:1px solid #1c2128;font-size:14px;color:var(--zilver-dim)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media (max-width:860px){
+  nav ul{display:none}
+  .ref-grid{grid-template-columns:repeat(3,1fr)}
+  .dienst-grid{grid-template-columns:1fr 1fr}
+  .dienst:nth-child(3){border-left:none}
+  .twee{grid-template-columns:1fr;gap:40px}
+  section.blok{padding:64px 0}
+}
+@media (max-width:520px){
+  .dienst-grid{grid-template-columns:1fr}
+  .dienst{border-left:none;border-top:1px solid #1c2128;padding:32px 24px}
+  .cijfers{grid-template-columns:1fr 1fr}
+  .ref-grid{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.onderdeel{text-align:center;color:var(--zilver-dim);font-size:14px;padding:0 24px 56px;margin-top:-24px}
+</style>
+</head>
+<body>
+
+<div class="spoed">Oibase Beveiliging is operationeel vanaf maart 2027. Vragen of alvast kennismaken? <a href="mailto:info@oibase-beveiliging.nl">info@oibase-beveiliging.nl</a></div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><span>OI</span>BASE BEVEILIGING</a>
+    <ul>
+      <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#over">Over ons</a></li>
+      <li><a href="#werkwijze">Werkwijze</a></li>
+      <li><a href="#werken">Werken bij</a></li>
+      <li><a href="https://oibase.nl" class="login" target="_blank" rel="noopener">Inloggen opdrachtgevers</a></li>
+      <li><a href="mailto:info@oibase-beveiliging.nl" class="tel">Mail ons</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <img src="/logo.png" alt="Oibase Beveiliging – Veiligheid met karakter">
+    <p>Beveiliging die past bij uw locatie, uw mensen en uw publiek. Gecertificeerde beveiligers met 24 jaar ervaring in de sector, gevestigd in Groningen en werkzaam in heel Noord-Nederland.</p>
+    <p class="start">Wij starten onze dienstverlening in <strong>maart 2027</strong>, zodra onze ND-vergunning van Justis is verleend. Tot die tijd gaan wij graag al met u in gesprek over uw beveiligingsvraag.</p>
+    <div class="acties">
+      <a class="knop vol" href="mailto:info@oibase-beveiliging.nl">Neem contact op</a>
+      <a class="knop lijn" href="#diensten">Bekijk onze diensten</a>
+    </div>
+  </div>
+</header>
+<p class="onderdeel">Oibase Beveiliging is onderdeel van Oibase B.V.</p>
+
+<section class="diensten" id="diensten">
+  <div class="wrap dienst-grid">
+    <div class="dienst">
+      <h3>OBJECTBEVEILIGING</h3>
+      <p>Bewaking van bedrijfspanden, terreinen en bouwlocaties. Toegangscontrole, surveillance en receptiediensten, overdag en 's nachts.</p>
+    </div>
+    <div class="dienst">
+      <h3>EVENEMENTEN</h3>
+      <p>Crowdmanagement, toegangs- en tassencontrole en hostdiensten voor festivals, sportevenementen en bedrijfsfeesten.</p>
+    </div>
+    <div class="dienst">
+      <h3>ZORGBEVEILIGING</h3>
+      <p>Beveiligers met gevoel voor de zorg: de-escalerend optreden in ziekenhuizen, GGZ-instellingen en verpleeghuizen.</p>
+    </div>
+    <div class="dienst">
+      <h3>HORECA &amp; FACILITAIR</h3>
+      <p>Gastvrije portiers en facilitaire medewerkers voor horeca, hotels en kantoren. Representatief en oplettend.</p>
+    </div>
+  </div>
+</section>
+
+<section class="refs" id="referenties">
+  <div class="wrap">
+    <p>Wij werken onder meer voor opdrachtgevers in de zorg, evenementen, horeca en industrie.</p>
+    <div class="ref-grid">
+      <!-- Vervang elke .ref door: <div class="ref"><img src="data:image/png;base64,..." alt="Naam opdrachtgever"></div> -->
+      <div class="ref">LOGO 1</div>
+      <div class="ref">LOGO 2</div>
+      <div class="ref">LOGO 3</div>
+      <div class="ref">LOGO 4</div>
+      <div class="ref">LOGO 5</div>
+      <div class="ref">LOGO 6</div>
+    </div>
+  </div>
+</section>
+
+<section class="blok" id="over">
+  <div class="wrap twee">
+    <div>
+      <h2 class="kop">Veiligheid met karakter</h2>
+      <p>Oibase Beveiliging is onderdeel van Oibase B.V. en is opgericht vanuit 24 jaar ervaring op de werkvloer van de beveiligingsbranche. Wij weten wat een opdrachtgever nodig heeft en wat een beveiliger nodig heeft om zijn werk goed te doen.</p>
+      <p style="margin-top:16px">Onze beveiligers zijn Wpbr-gecertificeerd, hebben een geldig legitimatiebewijs van Justis en worden gekoppeld aan opdrachten die bij hen passen. Geen anonieme uitzendkracht, maar een vast gezicht dat uw locatie kent.</p>
+    </div>
+    <div class="cijfers">
+      <div class="cijfer"><strong>24</strong><span>jaar ervaring in de beveiligingssector</span></div>
+      <div class="cijfer"><strong>2027</strong><span>operationeel vanaf maart, na verlening ND-vergunning</span></div>
+      <div class="cijfer"><strong>Wpbr</strong><span>ND-vergunning in aanvraag bij Justis</span></div>
+      <div class="cijfer"><strong>NL</strong><span>gevestigd in Onstwedde, Groningen</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="blok" id="werkwijze" style="padding-top:0">
+  <div class="wrap twee">
+    <div>
+      <h2 class="kop">Zo werken wij</h2>
+      <p>Van eerste gesprek tot vaste inzet in vier stappen. Helder, snel en zonder verrassingen achteraf.</p>
+    </div>
+    <ol class="punten">
+      <li><strong>Kennismaking en risicoanalyse</strong><span>Wij komen bij u langs, bekijken de locatie en brengen de risico's in kaart.</span></li>
+      <li><strong>Voorstel op maat</strong><span>U ontvangt een helder voorstel met duidelijke uurtarieven, zonder verborgen kosten.</span></li>
+      <li><strong>Inzet van vaste beveiligers</strong><span>Wij selecteren beveiligers die passen bij uw locatie en instrueren hen vooraf.</span></li>
+      <li><strong>Rapportage en evaluatie</strong><span>Digitale dienstrapportages per shift en periodieke evaluatie met u als opdrachtgever.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="blok werken" id="werken">
+  <div class="wrap twee">
+    <div>
+      <h2 class="kop">Werken bij Oibase</h2>
+      <p>Wij zoeken beveiligers die verder kijken dan de klok. Je krijgt vaste locaties, een planning die je zelf online inziet en een werkgever met 24 jaar ervaring in het vak.</p>
+      <ul class="eisen">
+        <li>Geldig Wpbr-legitimatiebewijs (grijze of blauwe pas)</li>
+        <li>Diploma Beveiliger 2 of Event Security Officer</li>
+        <li>Representatief, gastvrij en de-escalerend</li>
+        <li>Woonachtig in Groningen, Drenthe of Friesland</li>
+        <li>Bereid tot avond-, nacht- en weekenddiensten</li>
+      </ul>
+      <p style="margin-top:20px">Ook zonder Wpbr-pas welkom voor facilitaire en hostdiensten.</p>
+    </div>
+    <div class="mailblok">
+      <h3>Solliciteren</h3>
+      <p>Stuur je cv en een korte motivatie naar</p>
+      <a class="mailgroot" href="mailto:info@oibase-beveiliging.nl?subject=Sollicitatie beveiliger">info@oibase-beveiliging.nl</a>
+      <p class="klein">Vermeld je Wpbr-pasnummer (of dat je die nog niet hebt), je regio en je beschikbaarheid. Wij nemen binnen een week contact met je op. Aanstellingen gaan in vanaf maart 2027.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blok contact" id="contact">
+  <div class="wrap" style="text-align:center">
+    <h2 class="kop" style="display:inline-block;text-align:left">Contact</h2>
+    <p style="max-width:560px;margin:0 auto">Wilt u alvast kennismaken, een locatie laten bekijken of een aanvraag voor 2027 bespreken? Mail ons, wij reageren binnen één werkdag.</p>
+    <a class="mailgroot" href="mailto:info@oibase-beveiliging.nl">info@oibase-beveiliging.nl</a>
+    <div class="gegevens" style="margin-top:36px">
+      <p>Oibase Beveiliging is onderdeel van Oibase B.V. · Goordelaan 19, 9591 CB Onstwedde · KvK 42117378 · BTW NL869807729B01</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Oibase Beveiliging, onderdeel van Oibase B.V.</span>
+    <span><a href="mailto:info@oibase-beveiliging.nl">info@oibase-beveiliging.nl</a> · <a href="/privacy">Privacy</a> · <a href="/voorwaarden">Voorwaarden</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
