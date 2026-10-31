@@ -1,5 +1,5 @@
 const CACHE = 'oibase-beveiliging-v3';
-const BESTANDEN = ['/', '/diensten', '/objectbeveiliging', '/evenementenbeveiliging', '/zorgbeveiliging', '/horeca-facilitair', '/crisisondersteuning', '/bhv', '/servicemedewerkers', '/werkwijze', '/over-ons', '/werken-bij', '/contact', '/privacy', '/voorwaarden', '/style.css?v=3', '/site.js', '/logo.png', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png'];
+const BESTANDEN = ['/', '/diensten', '/objectbeveiliging', '/evenementenbeveiliging', '/zorgbeveiliging', '/horeca-facilitair', '/crisisondersteuning', '/bhv', '/servicemedewerkers', '/werkwijze', '/over-ons', '/werken-bij', '/contact', '/privacy', '/voorwaarden', '/style.css?v=4', '/site.js', '/logo.png', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(BESTANDEN)).then(() => self.skipWaiting()));

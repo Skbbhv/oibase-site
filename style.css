@@ -238,3 +238,19 @@ footer{background:#010205;border-top:1px solid var(--lijn);padding:80px 0 30px;f
   .kom{opacity:1;transform:none;transition:none}
   .hero .foto img{animation:none;transform:none}
 }
+
+/* SKB+ Keurmerk */
+.keurmerk{display:inline-flex;align-items:center;gap:12px;margin-top:22px;padding:10px 16px;border:1px solid var(--lijn);border-radius:12px;background:rgba(255,255,255,.04);color:#fff}
+.keurmerk:hover{border-color:rgba(10,140,255,.5);color:#fff}
+.keurmerk img{height:50px;width:auto}
+.keurmerk strong{display:block;font-size:13.5px}
+.keurmerk small{display:block;font-size:11.5px;color:var(--zilver-dim)}
+.keurblok{display:flex;align-items:center;gap:30px;padding:30px 36px;border:1px solid var(--lijn);border-radius:16px;background:linear-gradient(120deg,var(--kaart),var(--antraciet));color:var(--zilver)}
+.keurblok:hover{border-color:rgba(10,140,255,.5);color:var(--zilver)}
+.keurblok img{width:92px;height:auto;flex:none;filter:drop-shadow(0 8px 24px rgba(10,140,255,.25))}
+.keurblok .label{margin-bottom:10px}
+.keurblok h3{font-size:clamp(16px,2vw,20px);margin-bottom:8px}
+.keurblok p{color:var(--zilver-dim);font-size:15.5px}
+.keurblok div{flex:1}
+.keurblok .meer{font-weight:700;color:#fff;white-space:nowrap}
+@media(max-width:700px){.keurblok{flex-direction:column;align-items:flex-start;padding:26px}.keurblok img{width:76px}}
