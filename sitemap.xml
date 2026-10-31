@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.oibase-beveiliging.nl/</loc><lastmod>2026-10-05</lastmod><priority>1.0</priority></url>
-  <url><loc>https://www.oibase-beveiliging.nl/privacy</loc><lastmod>2026-10-05</lastmod><priority>0.3</priority></url>
-  <url><loc>https://www.oibase-beveiliging.nl/voorwaarden</loc><lastmod>2026-10-05</lastmod><priority>0.3</priority></url>
+  <url><loc>https://www.oibase-beveiliging.nl/</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/diensten</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/objectbeveiliging</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/evenementenbeveiliging</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/zorgbeveiliging</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/horeca-facilitair</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/werkwijze</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/over-ons</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/werken-bij</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/contact</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/privacy</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.oibase-beveiliging.nl/voorwaarden</loc><lastmod>2026-10-31</lastmod></url>
 </urlset>
