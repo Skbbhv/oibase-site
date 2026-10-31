@@ -254,3 +254,14 @@ footer{background:#010205;border-top:1px solid var(--lijn);padding:80px 0 30px;f
 .keurblok div{flex:1}
 .keurblok .meer{font-weight:700;color:#fff;white-space:nowrap}
 @media(max-width:700px){.keurblok{flex-direction:column;align-items:flex-start;padding:26px}.keurblok img{width:76px}}
+
+/* Onze systemen */
+.systemen{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.systeem{display:flex;gap:24px;align-items:flex-start;padding:34px 32px;border:1px solid var(--lijn);border-radius:16px;background:var(--kaart);color:var(--zilver);transition:.25s}
+.systeem:hover{border-color:rgba(10,140,255,.5);transform:translateY(-4px);color:var(--zilver)}
+.systeem img{width:64px;height:64px;border-radius:16px;flex:none;box-shadow:0 10px 30px rgba(10,140,255,.2)}
+.systeem h3{font-size:20px;letter-spacing:.08em;margin-bottom:4px}
+.systeem .sub2{display:block;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blauw-licht);margin-bottom:14px}
+.systeem p{font-size:15.5px;color:var(--zilver-dim);margin-bottom:16px}
+.systeem .meer{font-weight:700;color:#fff}
+@media(max-width:900px){.systemen{grid-template-columns:1fr}.systeem{padding:28px 24px;gap:18px}}
