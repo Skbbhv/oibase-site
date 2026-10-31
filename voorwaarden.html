@@ -43,6 +43,8 @@ nav{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.92);backdrop-filter:
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{font-family:'Michroma',sans-serif;font-size:15px;letter-spacing:.14em;color:var(--wit)}
 .brand span{color:var(--blauw)}
+.brand{white-space:nowrap}
+@media (max-width:440px){.brand{font-size:12.5px;letter-spacing:.1em}}
 nav ul{display:flex;gap:28px;list-style:none}
 nav li a{color:var(--zilver);font-size:14px;font-weight:600;letter-spacing:.06em}
 nav li a:hover,nav li a:focus-visible{color:var(--blauw)}
@@ -138,7 +140,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 <body>
 <nav>
   <div class="wrap">
-    <a class="brand" href="/"><span>OI</span>BASE BEVEILIGING</a>
+    <a class="brand" href="/"><span>OI</span>BASE BEVEILIGING B.V.</a>
     <ul>
       <li><a href="/#diensten">Diensten</a></li>
       <li><a href="/#over">Over ons</a></li>
