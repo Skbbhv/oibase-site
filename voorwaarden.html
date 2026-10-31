@@ -2,10 +2,18 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" sizes="48x48" href="/icons/favicon-48.png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Oibase Beveiliging">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
 <title>Algemene voorwaarden – Oibase Beveiliging</title>
 <link rel="canonical" href="https://www.oibase-beveiliging.nl/voorwaarden">
-<link rel="icon" type="image/jpeg" href="/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -176,5 +184,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <span><a href="mailto:info@oibase-beveiliging.nl">info@oibase-beveiliging.nl</a> · <a href="/privacy">Privacy</a> · <a href="/voorwaarden">Voorwaarden</a></span>
   </div>
 </footer>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js')})}</script>
 </body>
 </html>
