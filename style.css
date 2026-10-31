@@ -103,7 +103,7 @@ section.blok.donker{background:var(--antraciet)}
 .dienst:hover .foto img{transform:scale(1.07);filter:grayscale(.1) contrast(1.15) brightness(.8)}
 .dienst .inhoud{padding:28px}
 .dienst .nr{font:400 13px var(--kop);color:var(--blauw-licht);letter-spacing:.2em;margin-bottom:12px;display:block}
-.dienst h3{font-size:17px;letter-spacing:.1em;margin-bottom:12px}
+.dienst h3{font-size:clamp(13px,1.25vw,16px);letter-spacing:.06em;margin-bottom:12px;overflow-wrap:anywhere}
 .dienst p{font-size:15px;color:#c6ccd5;margin-bottom:18px}
 .dienst .meer{font-weight:700;font-size:14px;color:#fff;display:inline-flex;gap:8px;align-items:center}
 .dienst .meer::after{content:"→";transition:transform .25s}
