@@ -1,4 +1,4 @@
-const CACHE = 'oibase-beveiliging-v4';
+const CACHE = 'oibase-beveiliging-v5';
 const BESTANDEN = ['/', '/diensten', '/werken-bij', '/contact', '/offerte', '/style.css?v=7', '/site.js?v=7', '/logo.png', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png'];
 
 self.addEventListener('install', e => {
