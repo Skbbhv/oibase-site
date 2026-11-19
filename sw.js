@@ -1,5 +1,5 @@
-const CACHE = 'oibase-beveiliging-v6';
-const BESTANDEN = ['/', '/diensten', '/werken-bij', '/contact', '/offerte', '/style.css?v=7', '/site.js?v=7', '/logo.png', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png'];
+const CACHE = 'oibase-beveiliging-v7';
+const BESTANDEN = ['/', '/diensten', '/werken-bij', '/contact', '/offerte', '/style.css?v=8', '/site.js?v=7', '/logo.png', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(BESTANDEN)).then(() => self.skipWaiting()));
