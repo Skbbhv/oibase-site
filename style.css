@@ -58,6 +58,8 @@ nav.hoofd .wrap{display:flex;align-items:center;justify-content:space-between;he
 .foto{position:relative;overflow:hidden;background:radial-gradient(120% 100% at 30% 20%,#0b2a5c,#03060d)}
 .foto img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35) contrast(1.12) brightness(.72) saturate(.9)}
 .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,40,110,.25),rgba(3,6,13,.15) 40%,rgba(3,6,13,.85));mix-blend-mode:normal;pointer-events:none}
+.foto.echt img{object-position:50% 15%;filter:contrast(1.05) brightness(.95)}
+.foto.echt::after{background:linear-gradient(180deg,rgba(3,6,13,0) 55%,rgba(3,6,13,.55))}
 .foto.zonder::after{background:linear-gradient(180deg,rgba(0,40,110,.2),rgba(3,6,13,.35))}
 
 /* Hero */
